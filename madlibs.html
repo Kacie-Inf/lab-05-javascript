@@ -2,16 +2,34 @@
 <html>
 <body>
 <script>
-const noun = 'car'; 
-const adjective = 'small';
-const adverb = 'safely'
-const verb = 'running'
 
-console.log("On a tropical car,");
-console.log("Underneath a small lava moon.")
-console.log ("Safely hangin' with the hula dancers,")
-console.log ("Running askin' questions cause' they got all the answers.");
+var noun = prompt("Enter a noun :")
 
-</script>
+var adjective = prompt("Enter a adjective : ")
+
+var adverb = prompt("Enter a adverb : ")
+
+var verb = prompt ("Enter a verb : ")
+
+
+if (noun != null) {
+  document.getElementById("madlibs").innerHTML =
+  console.log("On a tropical" + " " + noun );
+}
+if (adjective != null) {
+  document.getElementById("madlibs").innerHTML =
+  console.log("Underneath a" + " " + adjective + "lava moon.");
+}
+if (adverb != null) {
+  document.getElementById("madlibs").innerHTML =
+  console.log(verb + " askin' questions cause' they got all the answers.");
+}
+if (verb != null) {
+  document.getElementById("madlibs").innerHTML =
+  console.log(verb + " askin' questions cause' they got all the answers.");
+}
+else
+console.log("Error");
+  </script>
 </body>
 </html>
